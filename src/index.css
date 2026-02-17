@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-terminal-green: #4af626;
+  --color-terminal-bg: #050505;
+  --color-terminal-dim: #1b4b14;
+  --font-mono: "Fira Code", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-terminal-bg text-terminal-green font-mono antialiased;
+  }
+}
