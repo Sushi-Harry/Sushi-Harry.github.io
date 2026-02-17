@@ -43,3 +43,47 @@ h1 { font-size: 5rem; margin: 0; }
     background: #d00000;
     transform: scale(1.1) skewX(-10deg);
 }
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 100px 50px;
+    background: #000;
+}
+
+.project-card {
+    background: #d00000; /* P5 Red */
+    width: 350px;
+    height: 250px;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); /* The Jagged Look */
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: scale(1.05) rotate(2deg);
+    background: white;
+}
+
+.project-card:hover .card-content {
+    color: black;
+}
+
+.card-content {
+    padding: 40px;
+    color: white;
+    transform: skewX(-5deg); /* Slight tilt for the text */
+}
+
+.project-title { font-size: 2rem; margin-bottom: 5px; text-transform: uppercase; }
+
+.status-tag {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
